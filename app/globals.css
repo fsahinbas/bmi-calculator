@@ -3,31 +3,47 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --blue: #345ff6;
+  --gun-metal: #253347;
+  --dark-electric-blue: #5e6e85;
+  --pure-white: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+section {
+  margin-bottom: 72px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.heading-xl {
+  font-size: 4rem;
+  line-height: 110%;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.heading-lg {
+  font-size: 1.5rem;
+  line-height: 110%;
+}
+
+.heading-md {
+  font-size: 1.25rem;
+  line-height: 110%;
+}
+
+.body-md {
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.body-md-bold {
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.body-sm {
+  font-size: 0.875rem;
+  line-height: 150%;
 }
